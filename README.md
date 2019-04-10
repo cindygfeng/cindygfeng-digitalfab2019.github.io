@@ -1,1 +1,1 @@
-HCDE 598 Special Topics Digital Fabrication
+Cindy Feng | HCDE 598 Special Topics Digital Fabrication
