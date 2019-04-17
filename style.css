@@ -9,15 +9,16 @@ h1,h2,h3,h4 {
   font-family: 'helvetica', 'arial', 'sans';
   }
 
-
-a {
-  color: #000;
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
 }
 
 .header {
   background: #fff;
   color: #000;
-  height: 500px;
   padding: 30px 30px 30px;
 }
 
