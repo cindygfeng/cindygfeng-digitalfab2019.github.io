@@ -21,15 +21,15 @@
                 This assignment was completed in the MILL on 04/22/2019.
             </p>
             <p>
-                <img src="Assignment2_4_12_pieces.jpg" width=600></a>
+                <img src="Assignment2/Assignment2_4_12_pieces.jpg" width=600></a>
             </p>
             <p>
                 <b>Files used:</b>
                 <ul>
-                    <li><a href="Assignment2.3dm">Rhino 3dm</a></li>
-                    <li><a href="Assignment2.gh">Grasshopper gh</a></li>
-                    <li><a href="Assignment2_0.02.dxf">dxf for cutting 0.02" cardboard</a></li>
-                    <li><a href="Assignment2_0.16.dxf">dxf for cutting 0.16" cardboard</a></li>
+                    <li><a href="Assignment2/Assignment2.3dm">Rhino 3dm</a></li>
+                    <li><a href="Assignment2/Assignment2.gh">Grasshopper gh</a></li>
+                    <li><a href="Assignment2/Assignment2_0.02.dxf" type="application/dxf">dxf for cutting 0.02" cardboard</a></li>
+                    <li><a href="Assignment2/Assignment2_0.16.dxf" type="application/dxf">dxf for cutting 0.16" cardboard</a></li>
                 </ul>
             </p>
             <h2>Learning Grasshopper</h2>
@@ -40,25 +40,25 @@
                 Familiarizing myself with the interface.  I spent a while with Kim Dziubinski in the MILL trying to figure out how to remove branches.  Overall I picked up Grasshopper pretty quickly and created a network of inputs and outputs. The user interface definitely needs some work, but I know that 3D CAD software does not undergo much usability testing.
             </p></p>
             <p>
-                <img src="Assignment2_Grasshopper_Screenshot1.jpg" width=600></a>
+                <img src="Assignment2/Assignment2_Grasshopper_Screenshot1.jpg" width=600></a>
             </p>
             <p>
                 In order to assign a I got very confused by the number icon, which read a number "7", so I found out I had to go into the display settings to uncheck "Draw Icons" in order to change the text on the integer parameter to "2".
             </p>
             <p>
-                <img src="Assignment2_Grasshopper_Numbericon.jpg" width=200></a>
+                <img src="Assignment2/Assignment2_Grasshopper_Numbericon.jpg" width=200></a>
             </p>
             <p>
                 I created number sliders for the thickness of the cardboard, and the length of the recangular slots in a polar array in a polygon. I soon decided I wanted to control the number of sides of a polygon with a control knob.  Here is what I started with, a hexagon.  The branches started to get complicated.
             </p>
             <p>
-                <img src="Assignment2_Grasshopper_Rhino_Screenshot.jpg" width=600></a>
+                <img src="Assignment2/Assignment2_Grasshopper_Rhino_Screenshot.jpg" width=600></a>
             </p>
             <p>
                 I then wanted the number of slots to also be controlled by the knob, and here is where I did some math to find out by what angle the original rectangle would have to rotate about the origin to stay centered on a flat side of the polygon.  I noticed that the polygon held the 90 degree point whenever I changed the number of sides.  The last step was figuring out that the rotation function in Grasshopper rotates in a counterclockwise direction by default, so I had to negate the radian values.  The equation was -pi/4 + -2*pi/(# of polygon sides).
             </p>
             <p>
-                <img src="Assignment2_Grasshopper_Screenshot2.jpg" width=1000></a>
+                <img src="Assignment2/Assignment2_Grasshopper_Screenshot2.jpg" width=1000></a>
             </p>
             <p>
                 I was super close! Just some minor debugging and then I added a rectangular array to print 3 rows of 4 shapes.
@@ -68,37 +68,37 @@
                 The final Grasshopper layout is below.  I tried cleaning up the branches a bit, but this was the best I could do.
             </p>
             <p>
-                <img src="Assignment2_Grasshopper_Screenshot_final.jpg" width=1000></a>
+                <img src="Assignment2/Assignment2_Grasshopper_Screenshot_final.jpg" width=1000></a>
             </p>
             <p>
                 And here is the resulting Rhino output for 6 sides:
             </p>
             <p>
-                <img src="Assignment2_Grasshopper_Rhino_Screenshot2.jpg" width=800></a>
+                <img src="Assignment2/Assignment2_Grasshopper_Rhino_Screenshot2.jpg" width=800></a>
             </p>
             <p>
                 Rhino output for 10 sides:
             </p>
             <p>
-                <img src="Assignment2_Grasshopper_Rhino_Screenshot3.jpg" width=800></a>
+                <img src="Assignment2/Assignment2_Grasshopper_Rhino_Screenshot3.jpg" width=800></a>
             </p>
             <h2>Lasercut Output</h2>
             <p>
                 Because I only had the CAD model for the hexagon shape while at the MILL, I only lasercut hexagons.  I used three thicknesses of cardboard total for this assignment.  The first was 0.16" corrugated cardboard.
             </p>
             <p>
-                <img src="Assignment2_1_Thickcardboardincutter.jpg" width=400></a>
+                <img src="Assignment2/Assignment2_1_Thickcardboardincutter.jpg" width=400></a>
             </p>
             <p> 
                 The second was 0.02" thick cardboard (La Croix canned soda container).
             </p>
             <p>
-                <img src="Assignment2_3_LaCroixboxincutter.jpg" width=400></a>
+                <img src="Assignment2/Assignment2_3_LaCroixboxincutter.jpg" width=400></a>
             <p>
                 Since I was worried this would be too flimsy, I printed on a 3rd material using Kim's white cardboard.
             </p>
             <p>
-                <img src="Assignment2_2_Whitecardboardincutter.jpg" width=400></a>
+                <img src="Assignment2/Assignment2_2_Whitecardboardincutter.jpg" width=400></a>
             </p>
             <h2>Assemblies That Do Not Come Apart with a Light Shaking!</h2>
             <p>
@@ -109,20 +109,20 @@
                 </ul>
             </p>
             <p>
-                <img src="Assignment2_5_Thickcardboardassembly.jpg" width=400></a>
+                <img src="Assignment2/Assignment2_5_Thickcardboardassembly.jpg" width=400></a>
             </p>
             <p>
-                <img src="Assignment2_6_LaCroixcardboardassembly.jpg" width=400></a>
+                <img src="Assignment2/Assignment2_6_LaCroixcardboardassembly.jpg" width=400></a>
             </p>
             <p>
                 I found that the LaCroix cardboard was too flimsy and would flop around when I shook it, so it was a good thing I had Kim's cardboard as a backup.
             </p>
             <p>
-                <img src="Assignment2_7_Whitecardboardassembly.jpg" width=400></a>
+                <img src="Assignment2/Assignment2_7_Whitecardboardassembly.jpg" width=400></a>
             </p>
             <h2>All the assemblies!</h2>
             <p>
-                <img src="Assignment2_8_Allassemblies.jpg" width=800></a>
+                <img src="Assignment2/Assignment2_8_Allassemblies.jpg" width=800></a>
             </p>
             <p>
                 Peer teacher: Kim Dziubinski
