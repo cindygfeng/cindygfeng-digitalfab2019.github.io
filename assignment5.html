@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Assignment 5</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <p>
+                <a href="index.html">Back to home</a>
+            </p>
+
+            <h1>Cindy Feng's Assignment 5</h1>
+            <p>
+                This assignment was completed in the MILL on 05/13/2019.
+            </p>
+            <p>
+                <img src="Assignment5/Box_assembly_2sides.jpg" width=600></a>
+            </p>
+            <p>
+                <b>Links to files used:</b>
+                <ul>
+                    <li><a href="https://cad.onshape.com/documents/4bacbe50008477e95d92a532/w/43bb14583ba84c4e338dc9a3/e/bce107667814050a57ab32c5">Onshape CAD model</a>
+                    <li><a href="Assignment5/Side-Edge_Cuts.gbr">Box Side gbr</a></li>
+                    <li><a href="Assignment5/Top_base-Edge_Cuts.gbr">Box Top/Base gbr</a></li>
+                </ul>
+            </p>
+            <h2>Modeling in Onshape</h2>
+            <p>
+                I started by measuring the sheet of FR1, which was 70 mm by 100 mm.  I knew I wanted to keep the box small so that I could mill 2 sides per sheet of FR1.  I also knew I wanted the top and base to be the same, and the sides to all be the same.  I worked with Kim in the Mill.  I quickly made the following sketch in Onshape.  The dimensions are in mm.  The slots are 1.29 mm because that is the thickness of the particular sheet of FR1 that we measured with calipers.
+            </p>
+            <p>
+                <img src="Assignment5/Onshape_side_sketch1.jpg" width=600></a>
+            </p>
+            <p>
+                I then extruded this sketch by the thickness of the FR1 which was 1.29 mm.  (I thought that all sheets of FR1 were the same thickness, so I modeled to this thickness, which ended up not being the case!)
+            </p>
+            <p>
+                I made a new assembly with 4 parts and used the fastening mate and the manipulation tools to align 4 of the sides together.
+            </p>
+            <p>
+                <img src="Assignment5/Onshape_side_assembly.jpg" width=600></a>
+            </p>
+            <p>
+                I then went back to the part studio and made a top plane to draw a top for the box.  I projected the slots from the side piece, and then I arrayed this rectangle around the centerpoint of the top to create slots.  This ultimately proved to be problematic when I tried to mill it because of the varying thicknesses of the FR1, but more details on that later.
+            </p>
+            <p>
+                <img src="Assignment5/Onshape_top_sketch.jpg" width=600></a>
+            </p>
+
+<h2>Milling</h2>
+
+            <p>
+                I exported the faces of the sides and the top as dxfs.  I then used KiCad and followed Josh's Powerpoint instructions to plot a gbr files with 2 sides, and another gbr file with 2 tops.
+            </p>
+            <p>
+                <img src="Assignment5/Kicad_sides.jpg" width=600></a>
+            </p>
+            <p>
+                I then opened the two gbr files in BantamTools for milling.  Here are the machine settings, which matched the instructions that were given by Josh.
+            </p>
+            <p>
+                <img src="Assignment5/BantamTools_Machinesettings.jpg" width=800></a>
+            </p>
+            <p>
+                I then proceeded to mill the pieces! Because my pieces were small, milling two at a time took less than 10 minutes! The sides came out beautifully.
+            </p>
+            <p>
+                <img src="Assignment5/Mill_sides_progress.jpg" width=500></a>
+            </p>
+            <p>
+                <img src="Assignment5/Mill_sides.jpg" width=600></a>
+            </p>
+            <p>
+                The top, however, did not come out great since I did not measure the thickness of the sheet of FR1, and did not change the machine settings accordingly.  Since the FR1 was thicker than the material thickness in the machine, the slots did not mill all the way through.
+            </p>
+            <p>
+                <img src="Assignment5/Mill_top_fail.jpg" width=400></a>
+            </p>
+            <p>
+                So I adjusted by oversizing the slots of the top and base so they would fit the max thickness of FR1, which I found to be about 1.6 mm.  However, classmates told me that I should oversize the slots, so I went ahead and sketched them out to be 2 mm by 10 mm rectangular cutouts, which fillets that were 1 mm radius.
+            </p>
+            <p>
+                <img src="Assignment5/Onshape_assembly_topview.jpg" width=400></a>
+            </p>
+
+<h2>The Final Product</h2>
+
+            <p>
+                I verified that the pieces fit together by finalizing the assembly in Onshape.
+            </p>
+            <p>
+                <img src="Assignment5/Onshape_boxassembly.jpg" width=500></a>
+            </p>
+            <p>
+                I then went to the Mill and printed the parts below!
+            </p>
+            <p>
+                <img src="Assignment5/Mill_parts.jpg" width=500></a>
+            </p>
+            <p>
+                However, the pieces STILL didn't fit together as expected!  The top, base, and 2 sides fit together really well with the edges meeting on all sides with no gaps, but the 3rd and 4th sides were really hard to add on, because I did not account for assembly when I was designing the parts!  I also think that the slots were misaligned and should have been offset so they weren't centered on each edge.  I had to think about why the assembly wasn't working for a while, but by then the MILL was closing and I didn't have time to mill another top and base!
+            </p>
+            <p>
+                <img src="Assignment5/Box_assembly_2sides.jpg" width=500></a>
+            </p>
+            <p>
+                Side #3 also fit! But it was a struggle to force the piece on.
+            </p>
+            <p>
+                <img src="Assignment5/Box_assembly.jpg" width=500></a>
+            </p>
+            <p> 
+                Ultimately I could not get the 4th and final side assembled to complete the box, because the box was too constrained and I ran out of time to mill more tops and bases.  Do 5 sides count as a box?
+            </p>
+            <p>
+                I think my thorough documentation shows that I know how to run the CNC tabletop mills at the MILL!
+            </p>
+            <p>
+                Acknowledgements: Leo, Kim, Josh, and everyone else who was at the Mill on Monday night!
+            </p>
+        </div>
+        
+    </body>
+</html>
