@@ -1,0 +1,172 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Assignment 6</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <p>
+                <a href="index.html">Back to home</a>
+            </p>
+
+            <h1>Cindy Feng's Assignment 6</h1>
+            <p>
+                This assignment was milled in the CoMotion MakerSpace on 05/19/2019, and completed at home.
+            </p>
+            <p>
+                <img src="Assignment6/plaster_final.jpg" width=600>
+            </p>
+            <p>
+                <b>Links/Files used:</b>
+                <ul>
+                    <li><a href="https://www.thingiverse.com/thing:3016926">Thingiverse source for climbind hold stl's</a>
+                    <li><a href="Assignment6/Assignment6_final.f3d">Final CAD model for milling machineable wax mold, f3d</a></li>
+                    <li><a href="Assignment6/Climbing Holds Final Version 2.stl">Final CAD model for milling machineable wax mold, stl</a></li>
+                    <li><a href="Assignment6/Operation1_1/8_flat.gcode">gcode file for 1/8 end mill</a></li>
+                    <li><a href="Assignment6/BantamOperationV2.btm">Bantam btm file for milling</a></li>
+                </ul>
+            </p>
+<h2>Ideation</h2>
+            <p>
+                I knew I wanted to stick with a one part mold to keep the assignment simple, and I got inspiration from going to the climbing gym, because the holds are flat on one side! <a href="https://www.thingiverse.com/thing:3016926">Here</a> is the link to the Thingiverse source for climbing hold fridge magnets where I downloaded the stl files.  There were many stl files for different hold shapes, but I found the three that could be milled with a 3 axis mill.
+            </p>
+            <p>
+                <img src="Assignment6/Thingiverse_climbinghold1.jpg" width=400>
+            </p>
+            <p>
+                <img src="Assignment6/Thingiverse_climbinghold2.jpg" width=400>
+            </p>
+<h2>CAD/CAM in Fusion 360</h2>
+            <p>
+                I obtained the dimensions for the machineable wax from Kim on Slack.  Thanks Kim!  I started by modeling the wax stock.  I decided to use Fusion 360 to eliminate one import step had I decided to use another CAD software.  Using Fusion 360 was pretty intuitive for me to pick up, given all the other CAD applications I already know!
+            </p>
+            <p>
+                <img src="Assignment6/Fusion_stockwax.jpg" width=500>
+            </p>
+            <p>
+                I then made a little slot in the wax, leaving about 5 mm of wall on each side.  I scaled the climbing hold stl's down by 1/8th size, so that they were roughly 45 mm wide.  I then placed 3 holds into the slot so that they fit side by side.
+            </p>
+            <p>
+                <img src="Assignment6/Fusion_3holds_final.jpg" width=500>
+            </p>
+            <p>
+                I was having a lot of issues getting my toolpath to run, and it took about an hour before I realized my entire model was not meshed together in one body.  So I merged all the meshes and this is what I pulled into the CAM workbench in Fusion 360.
+            </p>
+            <p>
+                <img src="Assignment6/Fusion_3holds_1body.jpg" width=500>
+            </p>
+            <p>
+                Once I pulled it into the CAM workbench, I used Adaptive Clearing to create a toolpath with a 1/8" flat end mill.  I also played with using a 1/16" ball mill for a finishing operation, but when I got to the CoMotion Makerspace for Professor Nadya's office hours on Sunday, I knew simplifying to one operation would be easiest.
+            </p>
+            <p>
+                <img src="Assignment6/Fusion_secondarymill.jpg" width=500></a>
+            </p>
+            <p>
+                I also had no real reason why I decided to do 3 climbing holds (I think it's cause I realized 3 of the stl's I pulled from Thingiverse would work), so I decided to cover one of the holds and only mill 2 of them, to save time.
+            </p>
+            <p>
+                Also, at office hours on Sunday I decided to mill on the tabletop Othermill, to allow other students to get their wax milled on the shop bot.  This is also when I got the wax!  Nadya helped me cut the block in half, and then saw down 1/3 of the wax so that it could be milled by the smaller Othermill.  The wax block that I hot glued to the othermill bed was 1 inch high.
+            </p>
+            <p>
+                <img src="Assignment6/wax_cut.jpg" width=500></a>
+            </p>
+
+<h2>Milling</h2>
+
+            <p>
+                I exported the gcode for the Adaptive Clearing toolpath, which said it would take 5 hours in Fusion 360, which I was skeptical about.  I did change the step down to 1.5 mm which was slightly less than half the diameter of the 1/8" flat end mill.  Below is the screenshot from what I pulled into Bantam.  In Bantam, I actually reduced the size of the material by half so I could see that the toolpath would fit.
+            </p>
+            <p>
+                <img src="Assignment6/Bantam_isometricview.jpg" width=800>
+            </p>
+            <p>
+                And below are the machine settings!  I moved the toolpath around until it was inside the material that was on the screen.  I also played with the Z placement until the white removal paths were at the top of the material.  I noticed that I was getting an error message that warned me that the spindle was retracting too far, so I adjusted the retract height to 5 mm (default was 10 mm) within Fusion 360 and exported the gcode again.
+            </p>
+            <p>
+                <img src="Assignment6/Bantam_machinesettings.jpg" width=800></a>
+            </p>
+            <p>
+                <img src="Assignment6/Fusion_adjustretract.jpg" width=800></a>
+            </p>
+            <p>
+                I then began milling the machineable wax!  The image below shows the ratchet bandsawing and sawing that Nadya and I did to remove 1/3 of the material.  In the back is the wax loaded into the machine!
+            </p>
+            <p>
+                <img src="Assignment6/wax_bandsaw.jpg" width=500></a>
+            </p>
+            <p>
+                The wax became so covered with removed material that I could no longer see the inside!  I was pausing the mill to vacuum every few minutes, but I eventually realized vacuuming wasn't really necessary unless I wanted to see the part that was being milled.
+            </p>
+            <p>
+                <img src="Assignment6/mill_progress.gif" width=500></a>
+            </p>
+            <p>
+                A progress shot after vacuuming:
+            </p>
+            <p>
+                <img src="Assignment6/wax_almostdone.jpg" width=500>
+            </p>
+            <p>
+                And here is the wax when it was finished milling! Bantam actually gave a 2 hr 46 min milling time in the beginning, and the machine stopped when there was still 50 minutes left, so the machine time was inaccurate.  In total, it took just under 2 hours to mill.
+            </p>
+            <p>
+                <img src="Assignment6/wax_millingfinished.jpg" width=600></a>
+            </p>
+            <p>
+                I did notice that there was a small amount of material that didn't get machined to the left of the left hold above due to the machine thinking the tool would not have enough space, so I ended up getting out an exacto-knife and a flathead screwdriver to "chisel" that bit of material out of the mold!  It wasn't perfect, however.
+            </p>
+            <p>
+                <img src="Assignment6/wax_finishing.jpg" width=600></a>
+            </p>
+
+<h2>The Silicone Mold!</h2>
+
+            <p>
+                Using the Oomoo that I bought from the class bill of materials, two paper cups and some wooden stir sticks, I set up all the materials I needed to mix and pour the silicone in my apartment hallway (plus gloves, of course!)
+            </p>
+            <p>
+                <img src="Assignment6/mold_prep.jpg" width=400></a>
+            </p>
+            <p>
+                I then mixed the two parts of Oomoo together and poured it into the wax mold!
+            </p>
+            <p>
+                <img src="Assignment6/mold_curing.jpg" width=400></a>
+            </p>
+            <p>
+                I then let it cure overnight.  In the morning, this is the silicone mold that I pried out with a butter knife!
+            </p>
+            <p>
+                <img src="Assignment6/mold_cured.jpg" width=600></a>
+            </p>
+
+<h2>Plastering!</h2>
+            <p>
+                I grabbed some Hydro-stone cement powder that classmate Lukas left in the Mill project room! Thanks Lukas!  I then started by eyeballing a 3:1 ratio for powder to water, but the mixture looked too watery.  Using advice from classmate Dawn that the mixture had to be the consistency of "heavy cream," I added more powder to the mixture until I thought it was a thicker consistency, then I poured it in after snipping the Ziploc bag! I figured if I got the ratio wrong, I could clear out the mold and try again.
+            </p>
+            <p>
+                <img src="Assignment6/plaster_prep.jpg" width=400></a>
+            </p>
+            <p> 
+                However, the consistency I visually estimated seemed to work fine! And I proceeded to make 4 more plaster pieces.  I decided to only do 1 climbing hold to complete the assignment (4 identical pieces) in case I ran out of plaster powder.  With the last hold, I made two holds!
+            </p>
+            <p>
+                <img src="Assignment6/plaster_final.jpg" width=400></a>
+            </p>
+            <p>
+                I noticed all the plaster was different colors, and one wasn't mixed thoroughly enough! However, the pieces were still solid, and unless I smashed them with a hammer, I couldn't precisely tell the difference in their brittleness!
+            </p>
+            <p>
+                Acknowledgements: Nadya for helping me bandsaw the machineable wax, Lukas for the plaster powder, and everyone who posted helpful tips on Slack!
+            </p>
+        </div>
+        
+    </body>
+</html>
